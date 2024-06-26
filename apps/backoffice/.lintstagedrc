@@ -1,8 +1,0 @@
-{
-    "**/*.{md}": [
-        "prettier --write"
-    ],
-    "src/**/*.{js,ts,tsx}": [
-        "yarn lint"
-    ]
-}
