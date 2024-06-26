@@ -21,6 +21,10 @@ Run: `composer install`
 
 Make sure your .env.local file is OK.
 
+Database
+ - create tables: `php bin/console doctrine:migrations:migrate`
+ - load data: `php bin/console doctrine:fixtures:load`
+
 Run: `npm install`
 
 Run: `symfony serve`
