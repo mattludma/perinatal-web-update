@@ -99,9 +99,10 @@
             </ul>
             <a href="{{ path('app_default_pageAction', {'slug':'pro-blizke'}) }}">Pro blízké</a>
           </li>
-          <li data-aos="fade-right" data-aos-delay="1050" tabindex="0">
-            <a href="{{ path('app_default_pageAction', {'slug':'konference'}) }}">Konference</a>
-          </li>
+{#          Temporarily disabled confetences tab #}
+{#          <li data-aos="fade-right" data-aos-delay="1050" tabindex="0">#}
+{#            <a href="{{ path('app_default_pageAction', {'slug':'konference'}) }}">Konference</a>#}
+{#          </li>#}
           <li data-aos="fade-left" data-aos-delay="1050" tabindex="0">
             {% if locale == 'cs' %}
               <a href="{{ path('app_locale',{'locale':'en'}) }}">English</a>
