@@ -11,7 +11,7 @@
 
 ## How to run this procjet?
 
-Make sure you are using PHP 7.4.x.
+Make sure you are using Node 16 and PHP 7.4.x.
 
 Install symfony CLI https://symfony.com/download - this depending on your system
 

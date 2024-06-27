@@ -4,7 +4,7 @@
 let settings = {
   browsersync: {
     url: 'http://127.0.0.1:8000/',
-    browser: 'canary',
+    browser: 'default',
     watch: ['templates/**/*.html', 'templates/**/*.php', 'templates/**/*.html.twig']
   },
   css: {
@@ -57,7 +57,7 @@ let Vinyl = require('vinyl');
 // BrowserSync - live realod, server, ovládání prohlížeče
 let browserSync = require('browser-sync');
 // SASS - generování CSS z preprocesoru
-let sass = require('gulp-sass');
+let sass = require('gulp-dart-sass');
 let sassGlob = require('gulp-sass-glob');
 // postCSS - postprocessing CSS (minifikace, autoprefixer...)
 let postcss = require('gulp-postcss');
