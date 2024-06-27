@@ -1,0 +1,38 @@
+navbar:
+  about:
+    title: O projektu
+    items:
+      screening: Screening
+      location: Kde projekt probíhá
+      origin: Vznik projektu
+      team: Náš tým
+  references:
+    title: Napsali o nás
+    items:
+      media: Média
+      women: Recenze uživatelek
+  contact:
+    title: Kontakt
+  quiz:
+    title: Otestuj se
+    items:
+      depression: Deprese
+      anxiety: Úzkost
+  women:
+    title: Pro ženy
+    items:
+      pregnancy: Těhotenství
+      childbirth: Po porodu
+  professionals:
+    title: Pro odborníky
+    items:
+      pregnancy: Těhotenství
+      childbirth: Po porodu
+  family:
+    title: Pro blízké
+    items:
+      actions: Co mohu dělat
+      help: Kam se obrátit
+      fathers: Duševní zdraví otců
+  conferences:
+    title: Konference

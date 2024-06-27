@@ -1,3 +1,4 @@
+{% trans_default_domain 'header' %}
 <header class="header {{ _headerClass|default() }}" role="banner">
   {% set locale = app.request.locale %}
   {% if getComponent('commonBannerTop') %}
@@ -42,66 +43,66 @@
           {% if locale == 'cs' %}
           <li data-aos="fade-left" data-aos-delay="150" tabindex="0">
             <ul>
-              <li><a href="{{ path('app_default_pageAction', {'slug':'o-projektu'}) }}#screening">Screening</a></li>
-              <li><a href="{{ path('app_default_pageAction', {'slug':'o-projektu'}) }}#kde-projekt-probiha">Kde projekt probíhá</a></li>
-              <li><a href="{{ path('app_default_pageAction', {'slug':'o-projektu'}) }}#vznik-projektu">Vznik projektu</a></li>
-              <li><a href="{{ path('app_default_pageAction', {'slug':'o-projektu'}) }}#tym">Náš tým</a></li>
+              <li><a href="{{ path('app_default_pageAction', {'slug':'o-projektu'}) }}#screening">{% trans %}navbar.about.items.screening{% endtrans%}</a></li>
+              <li><a href="{{ path('app_default_pageAction', {'slug':'o-projektu'}) }}#kde-projekt-probiha">{% trans %}navbar.about.items.location{% endtrans%}</a></li>
+              <li><a href="{{ path('app_default_pageAction', {'slug':'o-projektu'}) }}#vznik-projektu">{% trans %}navbar.about.items.origin{% endtrans%}</a></li>
+              <li><a href="{{ path('app_default_pageAction', {'slug':'o-projektu'}) }}#tym">{% trans %}navbar.about.items.team{% endtrans%}</a></li>
             </ul>
-            <a href="{{ path('app_default_pageAction', {'slug':'o-projektu'}) }}">O projektu</a>
+            <a href="{{ path('app_default_pageAction', {'slug':'o-projektu'}) }}">{% trans %}navbar.about.title{% endtrans%}</a>
           </li>
           {% else %}
             <li data-aos="fade-left" data-aos-delay="150" tabindex="0">
               <ul>
-                <li><a href="{{ path('app_default_pageAction', {'slug':'about-project'}) }}#screening">Screening</a></li>
-                <li><a href="{{ path('app_default_pageAction', {'slug':'about-project'}) }}#kde-projekt-probiha">Kde projekt probíhá</a></li>
-                <li><a href="{{ path('app_default_pageAction', {'slug':'about-project'}) }}#vznik-projektu">Vznik projektu</a></li>
-                <li><a href="{{ path('app_default_pageAction', {'slug':'about-project'}) }}#tym">Náš tým</a></li>
+                <li><a href="{{ path('app_default_pageAction', {'slug':'about-project'}) }}#screening">{% trans %}navbar.about.items.screening{% endtrans%}</a></li>
+                <li><a href="{{ path('app_default_pageAction', {'slug':'about-project'}) }}#kde-projekt-probiha">{% trans %}navbar.about.items.location{% endtrans%}</a></li>
+                <li><a href="{{ path('app_default_pageAction', {'slug':'about-project'}) }}#vznik-projektu">{% trans %}navbar.about.items.origin{% endtrans%}</a></li>
+                <li><a href="{{ path('app_default_pageAction', {'slug':'about-project'}) }}#tym">{% trans %}navbar.about.items.team{% endtrans%}</a></li>
               </ul>
-              <a href="{{ path('app_default_pageAction', {'slug':'about-project'}) }}">O projektu</a>
+              <a href="{{ path('app_default_pageAction', {'slug':'about-project'}) }}">{% trans %}navbar.about.title{% endtrans%}</a>
             </li>
           {% endif %}
           <li data-aos="fade-left" data-aos-delay="300" tabindex="0">
             <ul>
-              <li><a href="{{ path('app_default_pageAction', {'slug':'o-nas'}) }}#media">Média</a></li>
-              <li><a href="{{ path('app_default_pageAction', {'slug':'o-nas'}) }}#recenze-uzivatelek">Recenze uživatelek</a></li>
+              <li><a href="{{ path('app_default_pageAction', {'slug':'o-nas'}) }}#media">{% trans %}navbar.references.items.media{% endtrans%}</a></li>
+              <li><a href="{{ path('app_default_pageAction', {'slug':'o-nas'}) }}#recenze-uzivatelek">{% trans %}navbar.references.items.women{% endtrans%}</a></li>
             </ul>
-            <a href="{{ path('app_default_pageAction', {'slug':'o-nas'}) }}">Napsali o nás</a>
+            <a href="{{ path('app_default_pageAction', {'slug':'o-nas'}) }}">{% trans %}navbar.references.title{% endtrans%}</a>
           </li>
-          <li data-aos="fade-left" data-aos-delay="450" tabindex="0"><a href="{{ path('app_default_pageAction', {'slug':'kontakt'}) }}">Kontakt</a></li>
+          <li data-aos="fade-left" data-aos-delay="450" tabindex="0"><a href="{{ path('app_default_pageAction', {'slug':'kontakt'}) }}">{% trans %}navbar.contact.title{% endtrans%}</a></li>
         </ul>
         <ul class="nav--right">
           <li data-aos="fade-right" data-aos-delay="600" tabindex="0">
             <ul>
-              <li><a href="#test-epds" class="js-modal-open">Deprese</a></li>
-              <li><a href="#test-pass" class="js-modal-open">Úzkost</a></li>
+              <li><a href="#test-epds" class="js-modal-open">{% trans %}navbar.quiz.items.depression{% endtrans%}</a></li>
+              <li><a href="#test-pass" class="js-modal-open">{% trans %}navbar.quiz.items.anxiety{% endtrans%}</a></li>
             </ul>
-            <a href="{{ path('app_default_pageAction', {'slug':'otestuj-se'}) }}">Otestuj se</a>
+            <a href="{{ path('app_default_pageAction', {'slug':'otestuj-se'}) }}">{% trans %}navbar.quiz.title{% endtrans%}</a>
           </li>
           <li data-aos="fade-right" data-aos-delay="750" tabindex="0">
             <ul>
-              <li><a href="{{ path('app_default_pageAction_forWomen', {'slug':'tehotenstvi'}) }}">Těhotenství</a></li>
-              <li><a href="{{ path('app_default_pageAction_forWomen', {'slug':'po-porodu'}) }}">Po porodu</a></li>
+              <li><a href="{{ path('app_default_pageAction_forWomen', {'slug':'tehotenstvi'}) }}">{% trans %}navbar.women.items.pregnancy{% endtrans%}</a></li>
+              <li><a href="{{ path('app_default_pageAction_forWomen', {'slug':'po-porodu'}) }}">{% trans %}navbar.women.items.childbirth{% endtrans%}</a></li>
             </ul>
-            <a href="{{ path('app_default_pageAction', {'slug':'pro-zeny'}) }}">Pro ženy</a>
+            <a href="{{ path('app_default_pageAction', {'slug':'pro-zeny'}) }}">{% trans %}navbar.women.title{% endtrans%}</a>
           </li>
           <li data-aos="fade-right" data-aos-delay="750" tabindex="0">
             <ul>
-              <li><a href="{{ path('app_default_pageAction_forProfessionals', {'slug':'tehotenstvi'}) }}">Těhotenství</a></li>
-              <li><a href="{{ path('app_default_pageAction_forProfessionals', {'slug':'po-porodu'}) }}">Po porodu</a></li>
+              <li><a href="{{ path('app_default_pageAction_forProfessionals', {'slug':'tehotenstvi'}) }}">{% trans %}navbar.professionals.items.pregnancy{% endtrans%}</a></li>
+              <li><a href="{{ path('app_default_pageAction_forProfessionals', {'slug':'po-porodu'}) }}">{% trans %}navbar.professionals.items.childbirth{% endtrans%}</a></li>
             </ul>
-            <a href="{{ path('app_default_pageAction', {'slug':'pro-odborniky'}) }}">Pro odborníky</a>
+            <a href="{{ path('app_default_pageAction', {'slug':'pro-odborniky'}) }}">{% trans %}navbar.professionals.title{% endtrans%}</a>
           </li>
           <li data-aos="fade-right" data-aos-delay="900" tabindex="0">
             <ul>
-              <li><a href="{{ path('app_default_pageAction_forLovedOnes', {'slug':'co-mohu-delat'}) }}">Co mohu dělat</a></li>
-              <li><a href="{{ path('app_default_pageAction_forLovedOnes', {'slug':'kam-se-obratit'}) }}">Kam se obrátit</a></li>
-              <li><a href="{{ path('app_default_pageAction_forLovedOnes', {'slug':'dusevni-zdravi-otcu'}) }}">Duševní zdraví otců</a></li>
+              <li><a href="{{ path('app_default_pageAction_forLovedOnes', {'slug':'co-mohu-delat'}) }}">{% trans %}navbar.family.items.actions{% endtrans%}</a></li>
+              <li><a href="{{ path('app_default_pageAction_forLovedOnes', {'slug':'kam-se-obratit'}) }}">{% trans %}navbar.family.items.help{% endtrans%}</a></li>
+              <li><a href="{{ path('app_default_pageAction_forLovedOnes', {'slug':'dusevni-zdravi-otcu'}) }}">{% trans %}navbar.family.items.fathers{% endtrans%}</a></li>
             </ul>
-            <a href="{{ path('app_default_pageAction', {'slug':'pro-blizke'}) }}">Pro blízké</a>
+            <a href="{{ path('app_default_pageAction', {'slug':'pro-blizke'}) }}">{% trans %}navbar.family.title{% endtrans%}</a>
           </li>
 {#          Temporarily disabled confetences tab #}
 {#          <li data-aos="fade-right" data-aos-delay="1050" tabindex="0">#}
-{#            <a href="{{ path('app_default_pageAction', {'slug':'konference'}) }}">Konference</a>#}
+{#            <a href="{{ path('app_default_pageAction', {'slug':'konference'}) }}">{% trans %}navbar.conferences.title{% endtrans%}</a>#}
 {#          </li>#}
           <li data-aos="fade-left" data-aos-delay="1050" tabindex="0">
             {% if locale == 'cs' %}

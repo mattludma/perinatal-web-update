@@ -1,0 +1,38 @@
+navbar:
+  about:
+    title: About the project
+    items:
+      screening: Screening
+      location: Where project takes place
+      origin: Project origins
+      team: Our team
+  references:
+    title: Our references
+    items:
+      media: Media
+      women: References from women
+  contact:
+    title: Contact
+  quiz:
+    title: Test yourself
+    items:
+      depression: Depression
+      anxiety: Anxiety
+  women:
+    title: For women
+    items:
+      pregnancy: Pregnancy
+      childbirth: After giving birth
+  professionals:
+    title: For professionals
+    items:
+      pregnancy: Pregnancy
+      childbirth: After giving birth
+  family:
+    title: For family and friends
+    items:
+      actions: What can I do
+      help: Where to turn for help
+      fathers: Mental health of fathers
+  conferences:
+    title: Conferences
